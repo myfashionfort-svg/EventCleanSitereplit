@@ -32,8 +32,15 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/">
-          <a className="text-2xl font-display font-bold tracking-wider text-white">
-            ASTRAL<span className="text-primary">.</span>
+          <a className="flex items-center gap-3 group">
+            <img 
+              src="/logo.jpg" 
+              alt="Astral Entertainment Logo" 
+              className="h-12 w-auto object-contain group-hover:brightness-110 transition-all"
+            />
+            <span className="text-xl md:text-2xl font-display font-bold tracking-wider text-white">
+              ASTRAL<span className="text-primary">.</span>
+            </span>
           </a>
         </Link>
 
