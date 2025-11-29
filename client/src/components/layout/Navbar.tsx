@@ -35,7 +35,7 @@ export default function Navbar() {
             <img 
               src="/logo.jpg" 
               alt="Astral Entertainment Logo" 
-              className="h-12 w-auto object-contain group-hover:brightness-110 transition-all"
+              className="h-24 md:h-28 w-auto object-contain group-hover:brightness-110 transition-all"
             />
         </Link>
 
