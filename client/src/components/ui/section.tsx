@@ -17,7 +17,7 @@ export default function Section({ children, className, id, delay = 0 }: SectionP
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, delay, ease: "easeOut" }}
-      className={cn("py-20 md:py-32 px-6", className)}
+      className="py-20 md:py-32 px-6 container mx-auto mb-20 pt-[125px] pb-[125px]"
     >
       {children}
     </motion.section>
