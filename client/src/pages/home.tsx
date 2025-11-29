@@ -34,14 +34,6 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="mb-12 flex justify-center"
           >
-            <div className="relative group">
-              <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full group-hover:bg-primary/30 transition-all duration-1000" />
-              <img 
-                src={logo} 
-                alt="Astral Logo" 
-                className="h-40 md:h-64 relative z-10 drop-shadow-2xl"
-              />
-            </div>
           </motion.div>
 
           <motion.h1 
