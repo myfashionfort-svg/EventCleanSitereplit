@@ -31,8 +31,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/">
-          <a className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group">
             <img 
               src="/logo.jpg" 
               alt="Astral Entertainment Logo" 
@@ -41,20 +40,19 @@ export default function Navbar() {
             <span className="text-xl md:text-2xl font-display font-bold tracking-wider text-white">
               ASTRAL<span className="text-primary">.</span>
             </span>
-          </a>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              <a
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location === link.href ? "text-primary" : "text-white/80"
-                }`}
-              >
+            <Link 
+              key={link.href} 
+              href={link.href}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location === link.href ? "text-primary" : "text-white/80"
+              }`}
+            >
                 {link.label}
-              </a>
             </Link>
           ))}
           <Link href="/contact">
@@ -80,13 +78,13 @@ export default function Navbar() {
             className="absolute top-full left-0 right-0 bg-background border-b border-white/10 p-6 md:hidden flex flex-col gap-4"
           >
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  className="text-lg font-medium text-white hover:text-primary"
-                  onClick={() => setIsOpen(false)}
-                >
+              <Link 
+                key={link.href} 
+                href={link.href}
+                className="text-lg font-medium text-white hover:text-primary"
+                onClick={() => setIsOpen(false)}
+              >
                   {link.label}
-                </a>
               </Link>
             ))}
           </motion.div>

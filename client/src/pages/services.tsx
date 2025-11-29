@@ -4,7 +4,7 @@ import Section from "@/components/ui/section";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Mic2, Users, Globe, Building2, Home, Sparkles, Truck, Laptop, Music, Palette, Briefcase } from "lucide-react";
+import { Mic2, Users, Globe, Building2, Home, Sparkles, Truck, Laptop, Music, Palette, Briefcase, Shield } from "lucide-react";
 import eventBg from "@assets/stock_images/luxury_corporate_eve_d4c0885d.jpg";
 import cleanBg from "@assets/stock_images/pristine_modern_offi_0ce46510.jpg";
 import weddingBg from "@assets/stock_images/elegant_wedding_rece_f9d4fc32.jpg";
