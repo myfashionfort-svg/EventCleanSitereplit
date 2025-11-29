@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="bg-transparent border-b border-white/10 py-6 pt-[0px] pb-[0px]"
+      className="bg-gradient-to-b from-background/90 via-background/70 to-transparent border-b border-white/10 py-6 pt-[0px] pb-[0px] backdrop-blur"
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
