@@ -98,7 +98,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-display font-bold text-white leading-tight">
               Creating Memorable Events & Immaculate Environments
             </h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-lg text-white/85 leading-relaxed">
               <p>
                 If you are looking to create a memorable event or maintain an immaculate environment, look no further than The Astral Entertainment. Whether it's delivering high-impact events or ensuring spotless commercial and residential spaces, we are your trusted partner for excellence.
               </p>
