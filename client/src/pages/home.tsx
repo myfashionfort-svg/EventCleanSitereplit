@@ -150,35 +150,47 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Stats Section with Background */}
-      <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-primary/90 mix-blend-multiply z-10" />
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <img src={statsBg} className="w-full h-full object-cover grayscale" alt="Background" />
-        </div>
-        <div className="container relative z-20 px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+      {/* Our Process Section */}
+      <Section className="bg-zinc-900">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-20 max-w-3xl mx-auto">
+            <span className="text-primary uppercase tracking-widest text-sm font-medium mb-4 block">How We Work</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Our Simple, Effective Process</h2>
+            <p className="text-muted-foreground text-lg">
+              From initial consultation to flawless execution, we guide you through every step with transparency and expertise.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8 relative">
+            {/* Connecting line */}
+            <div className="hidden md:block absolute top-20 left-0 right-0 h-[2px] bg-gradient-to-r from-primary via-primary/50 to-primary/20" />
+            
             {[
-              { label: "Years Experience", value: "10+" },
-              { label: "Events Managed", value: "500+" },
-              { label: "Happy Clients", value: "100%" },
-              { label: "Team Members", value: "50+" },
-            ].map((stat, index) => (
+              { step: "1", title: "Consultation", desc: "We listen to your vision, understand your needs, and discuss all details." },
+              { step: "2", title: "Planning", desc: "Our team creates a comprehensive plan tailored to your requirements." },
+              { step: "3", title: "Execution", desc: "We bring your vision to life with precision, expertise, and attention to detail." },
+              { step: "4", title: "Completion", desc: "Deliver exceptional results and ensure your complete satisfaction." },
+            ].map((item, idx) => (
               <motion.div 
-                key={index}
+                key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: idx * 0.15 }}
                 viewport={{ once: true }}
+                className="relative"
               >
-                <div className="text-5xl md:text-6xl font-display font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-white/80 text-sm uppercase tracking-widest font-medium">{stat.label}</div>
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-20 h-20 bg-primary text-black rounded-full flex items-center justify-center font-display font-bold text-3xl mb-6 shadow-lg shadow-primary/30 relative z-10">
+                    {item.step}
+                  </div>
+                  <h3 className="text-2xl font-display font-bold text-white mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Why Choose Us */}
       <Section className="bg-zinc-950">
