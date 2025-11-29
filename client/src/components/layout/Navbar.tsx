@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="bg-transparent border-b border-white/10 py-6"
+      className="bg-transparent border-b border-white/10 py-6 pt-[0px] pb-[0px]"
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
@@ -62,7 +62,6 @@ export default function Navbar() {
           {isOpen ? <X /> : <Menu />}
         </button>
       </div>
-
       {/* Mobile Nav */}
       <AnimatePresence>
         {isOpen && (
