@@ -37,9 +37,6 @@ export default function Navbar() {
               alt="Astral Entertainment Logo" 
               className="h-12 w-auto object-contain group-hover:brightness-110 transition-all"
             />
-            <span className="text-xl md:text-2xl font-display font-bold tracking-wider text-white">
-              ASTRAL<span className="text-primary">.</span>
-            </span>
         </Link>
 
         {/* Desktop Nav */}
